@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    transition:0.4s;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header button{
+    margin-top:15px;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+section{
+    width:80%;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+#slider{
+    width:100%;
+    max-width:500px;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    margin:15px auto;
+}
+
+.slider-buttons{
+    text-align:center;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+ul{
+    margin-top:15px;
+}
+
+li{
+    margin:10px 0;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+}
+
+#successMessage{
+    color:green;
+    margin-top:10px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* Dark Mode */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode h2{
+    color:#60a5fa;
+}

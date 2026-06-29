@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav Kumar | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+.social-links{
+    margin-top:15px;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+.project{
+    border-left:4px solid #1e3a8a;
+    padding-left:15px;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px 5px;
+    background:#1e3a8a;
+    color:white;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="profile.jpeg" alt="Abhinav Kumar" class="profile-pic">
+
+    <h1>Abhinav Kumar</h1>
+    <p>B.Tech (CSIT) Student | Software Engineering Enthusiast</p>
+    <button id="themeBtn">🌙 Toggle Theme</button>
+
+    <div class="social-links">
+        <a href="https://github.com/abhinavsingh-912" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhinav-kumar-762932387" target="_blank">LinkedIn</a>
+        <a href="https://abhinav912.xo.je/" target="_blank">Portfolio</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+     <h2>About Me</h2>
+
+    <button onclick="toggleContent()">
+        Show / Hide About
+    </button>
+
+    <div id="aboutContent">
+    <p>
+     First-year B.Tech student in Computer Science and Information Technology with a strong interest in programming,
+     software development, and emerging technologies. Skilled in Java, HTML, C, and basic web development. A quick
+     learner with good problem-solving and teamwork abilities, eager to gain practical experience through internships and
+     contribute to real-world projects while continuously improving technical skills
+    </p>
+</section>
+
+<!-- Image Slider -->
+<section>
+    <h2>Image Slider</h2>
+
+    <img id="slider" src="image1.jpeg" alt="Slider Image">
+
+    <div class="slider-buttons">
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+    </div>
+</section>
+
+<!-- To Do List -->
+<section>
+    <h2>To-Do List</h2>
+
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a task">
+
+    <button onclick="addTask()">
+        Add Task
+    </button>
+
+    <ul id="taskList"></ul>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>C Programming</li>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>IntelliJ IDEA</li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <h3>GL Bajaj Institute of Technology and Management</h3>
+    <p>B.Tech (CSIT) | 2025 - 2029</p>
+
+    <br>
+
+    <h3>Roshni Public School (CBSE)</h3>
+    <p>Intermediate: 64.2%</p>
+
+    <br>
+
+    <h3>Modern Public School (CBSE)</h3>
+    <p>Matriculation: 69.8%</p>
+</section>
+
+<section id="certificates">
+    <h2>Certificates</h2>
+
+    <ul>
+        <li>
+            <a href="certificate1.pdf" target="_blank">
+                Introduction to Modern AI
+            </a>
+        </li>
+
+        <li>
+            <a href="certificate2.pdf" target="_blank">
+                Apply AI: Analyze Customer Reviews
+            </a>
+        </li>
+
+        <li>
+            <a href="certificate3.pdf" target="_blank">
+                Apply AI: Update Your Resume
+            </a>
+        </li>
+
+        <li>
+            <a href="certificate4.pdf" target="_blank">
+                Introduction to Cybersecurity
+            </a>
+        </li>
+    </ul>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+            Developed a responsive personal portfolio website using HTML and CSS
+            to showcase my skills, education, certificates, and projects.
+        </p>
+        <a href="https://abhinav912.xo.je/" target="_blank" class="btn">
+            View Project
+        </a>
+    </div>
+
+    <div class="project">
+        <h3>Student Management System</h3>
+        <p>
+            Built a Java-based application to manage student records.
+            Features include adding, updating, deleting, and searching student information.
+        </p>
+        <a href="https://github.com/abhinavsingh-912/StudentManagementSystem" target="_blank" class="btn">
+            View Code
+        </a>
+    </div>
+   </section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: abhinavsinghsuryaabhi@gmail.com</p>
+    <p>Phone: +91 9835019941</p>
+
+    <a href="https://github.com/abhinavsingh-912" target="_blank" class="btn">GitHub</a>
+
+    <a href="https://www.linkedin.com/in/abhinav-kumar-762932387" target="_blank" class="btn">LinkedIn</a>
+
+    <a href="https://abhinav912.xo.je/" target="_blank" class="btn">Portfolio</a>
+</section>
+
+<!-- Contact Form -->
+<section>
+    <h2>Contact Form</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name">
+
+        <span id="nameError" class="error"></span>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email">
+
+        <span id="emailError" class="error"></span>
+
+        <textarea
+            id="message"
+            placeholder="Your Message"></textarea>
+
+        <span id="messageError" class="error"></span>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="successMessage"></p>
+</section>
+
+<footer>
+    <p>© 2026 Abhinav Kumar | Portfolio Website</p>
+</footer>
+
+</body>
+</html>   take all data from this file
